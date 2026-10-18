@@ -1,0 +1,45 @@
+# Python - Byte-compiled
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Distribution
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.tmp
+
+# Project specific
+models/
+*.h5
+*.tflite
+*.pb
+
+# Jupyter
+.ipynb_checkpoints
+
+# pip
+pip-log.txt

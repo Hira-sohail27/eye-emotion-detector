@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eye Emotion Detector</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>👁️ Eye Emotion Detector</h1>
+      <p>Real-time emotion detection focusing on eyes & facial expressions</p>
+    </header>
+
+    <div class="video-wrapper">
+      <video id="video" autoplay muted playsinline></video>
+      <canvas id="overlay"></canvas>
+      <div id="eyeBoxLeft" class="eye-box"></div>
+      <div id="eyeBoxRight" class="eye-box"></div>
+    </div>
+
+    <div class="panel">
+      <div class="emotion-card">
+        <h2 id="emotion">--</h2>
+        <span id="confidence">Waiting for camera...</span>
+        <div class="bar-container"><div id="bar"></div></div>
+      </div>
+      <div class="details">
+        <h3>Eye Analysis</h3>
+        <ul>
+          <li>Left Eye Open: <b id="leftEye">--</b></li>
+          <li>Right Eye Open: <b id="rightEye">--</b></li>
+          <li>Blink Status: <b id="blink">--</b></li>
+          <li>All Emotions: <b id="allEmotions">--</b></li>
+        </ul>
+        <button id="startBtn">Start Camera</button>
+      </div>
+    </div>
+    <footer>Made for Saylani IT Assignment - Hira Sohail</footer>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

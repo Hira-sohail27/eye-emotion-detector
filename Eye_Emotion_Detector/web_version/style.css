@@ -1,0 +1,20 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Segoe UI,sans-serif}
+body{background:#0f1115;color:#e6e8ec;display:flex;justify-content:center;min-height:100vh}
+.container{width:95%;max-width:1000px;padding:20px}
+header{text-align:center;margin:20px 0}
+header h1{font-size:32px;font-weight:800}
+header p{opacity:.7;margin-top:6px}
+.video-wrapper{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:20px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+video,canvas{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+canvas{z-index:2}
+.eye-box{position:absolute;border:2px solid #5ee9ff;display:none;border-radius:8px;z-index:3}
+.panel{display:grid;grid-template-columns:1.5fr 1fr;gap:20px;margin-top:20px}
+.emotion-card,.details{background:#181b22;border:1px solid #262a34;padding:20px;border-radius:16px}
+.emotion-card h2{font-size:48px;text-transform:capitalize;background:linear-gradient(90deg,#5ee9ff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.bar-container{height:8px;background:#2a2e3a;border-radius:10px;margin-top:15px;overflow:hidden}
+#bar{height:100%;width:0%;background:linear-gradient(90deg,#5ee9ff,#a78bfa);transition:.3s}
+.details ul{list-style:none;margin:15px 0;line-height:2}
+button{width:100%;padding:12px;border:0;border-radius:10px;background:#5ee9ff;color:#000;font-weight:700;cursor:pointer;font-size:16px}
+button:hover{background:#7ef0ff}
+footer{text-align:center;opacity:.4;margin-top:20px;font-size:12px}
+@media(max-width:700px){.panel{grid-template-columns:1fr}}
